@@ -19,8 +19,8 @@ class About extends Component {
                             height="400px"
                             src="https://www.youtube.com/embed/FyDQljKtWnI"
                             title="CÀ PHÊ KHỞI NGHIỆP VTV1 - BOOKINGCARE - HỆ THỐNG ĐẶT LỊCH KHÁM TRỰC TUYẾN"
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullscreen></iframe>
                     </div>
                     <div className='content-right'>
                         <p>Việc đặt lịch khám bệnh không còn là nỗi lo, khi bạn có thể tự chủ động đặt lịch dựa theo thời gian rảnh của chính mình. Ngoài ra, sau khi đặt lịch khám bệnh ở các địa điểm y tế bạn còn được hướng dẫn chi tiết về lộ trình đi đến nơi khám mà bạn đã chọn từ ứng dụng BookingCare</p>
