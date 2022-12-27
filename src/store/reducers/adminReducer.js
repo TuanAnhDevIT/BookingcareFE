@@ -1,9 +1,16 @@
 import actionTypes from '../actions/actionTypes';
-
+// import { getAllCodeService } from '../../services/userService';
 const initialState = {
+    isLoadingGender: false,
     genders: [],
     roles: [],
     positions: [],
+    users: [],
+    topDoctors: [],
+    allDoctors: [],
+    allScheduleTime: [],
+
+    allRequiredDoctorInfor: [],
 }
 
 const adminReducer = (state = initialState, action) => {
