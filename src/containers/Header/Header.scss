@@ -20,27 +20,26 @@
             font-size: $base-size + 1px;
         }
     }
-}
-.languages{
-    .welcome{
-        margin-right: 10px;
-    }
-    .language-en{
-        margin-right: 15px;
-        margin-left: 10px;
-        cursor: pointer;
-
-        &.active{
-            opacity: 1;
-            color: #30d663;
+    .languages {
+        .welcome{
+            margin-right: 20px;
 
         }
-    }
-    .language-vi{
-        cursor: pointer;
-        &.active{
-            opacity: 1;
-            color: orange;
+        .language-en{
+            margin-right: 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            &.active{
+                opacity: 0.8;
+                color: #e83b0b;
+            }
+        }
+        .language-vi{
+            cursor: pointer;
+            &.active{
+                opacity: 0.8;
+                color: orange;
+            }
         }
     }
 }

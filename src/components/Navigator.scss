@@ -4,9 +4,11 @@
     display: flex;
     margin: 0;
     padding: 0;
+    color: rgb(176, 228, 19);
     &.list-unstyled,
     .list-unstyled {
         list-style-type: none;
+        
     }
     .menu-group {
         &:hover {
@@ -19,6 +21,7 @@
             border-right: 1px solid $border;
             &:first-child {
                 border-left: 1px solid $border;
+                
             }
         }
         .menu-list {
@@ -29,22 +32,23 @@
             color: $text-in-light;
             position: absolute;
             padding: 0;
+           
             .menu {
-                width: 205px;
+                width: 100%;
                 padding: 0 15px;
                 height: 35px;
                 line-height: 35px;
                 text-transform: none;
 
-                &.active{
-                    a{
-                        color: orange !important;
-                    }
+                &.active {
+                    
                     background-color: #ededed;
                 }
+
                 .menu-link {
                     text-decoration: none;
-                    color: $text-in-light;
+                    color: rgb(223, 83, 55) !important;
+
                 }
                 .sub-menu-list {
                     display: none;

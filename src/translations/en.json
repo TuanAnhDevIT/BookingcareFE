@@ -59,7 +59,9 @@
         "outstandingdoctor": "Out standing doctor",
         "search": "SEARCH",
         "popularspecialty": "Popular Specialty",
-        "moreinfor": " More infor"
+        "moreinfor": " More infor",
+        "handbook": "Handbook",
+        "all-posts": "All posts"
     },
     "manage-schedule": {
         "title": "Manage the doctor's examination plan",

@@ -59,7 +59,9 @@
         "outstandingdoctor": "Bác sĩ nỗi bật tuần qua",
         "search": "TÌM KIẾM",
         "popularspecialty": "Chuyên khoa phổ biến",
-        "moreinfor": "Xem thêm"
+        "moreinfor": "Xem thêm",
+        "handbook": "Cẩm nang",
+        "all-posts": "Tất cả bài viết"
     },
     "manage-schedule": {
         "title": "Quản lí kế hoạch khám bệnh của bác sĩ",

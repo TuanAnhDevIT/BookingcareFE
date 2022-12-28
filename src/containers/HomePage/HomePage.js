@@ -2,41 +2,41 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import HomeHeader from './HomeHeader';
 import Specialty from './Section/Specialty';
-import About from './Section/About';
-import HandBook from './Section/HandBook';
 import MedicalFacility from './Section/MedicalFacility';
 import OutStandingDoctor from './Section/OutStandingDoctor';
-import HomeFooter from './HomeFooter';
 
+import HandBook from './Section/HandBook';
+import About from './Section/About';
+import HomeFooter from './HomeFooter';
 import './HomePage.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-class HomePage extends Component {
 
+class HomePage extends Component {
+    // handleAfterChange = (index, dontAnimate) => {
+    //     console.log('DUNGNGUYEN IT :', index)
+    // }
     render() {
+
         let settings = {
-            dot: false,
-            Infinite: true,
+            breakpoint: 1025,
+            dots: true,
+            infinite: false,
             speed: 500,
             slidesToShow: 4,
-            slidesToScroll: 1,
+            slidesToScroll: 4,
+            // slickGoTo: this.handleAfterChange
+            // nextArrow: <SampleNextArrow/>,
+            // prevArrow: <SamplePrevArrow/>
         };
         return (
             <div>
-                <HomeHeader />
-                <Specialty
-                    settings={settings}
-                />
-                <MedicalFacility
-                    settings={settings}
-                />
-                <OutStandingDoctor
-                    settings={settings}
-                />
-                <HandBook
-                    settings={settings}
-                />
+                <HomeHeader isshowBanner={true} />
+                <Specialty settings={settings} />
+                <MedicalFacility settings={settings} />
+                <OutStandingDoctor settings={settings} />
+                <HandBook settings={settings} />
                 <About />
                 <HomeFooter />
             </div>
