@@ -61,7 +61,12 @@
         "popularspecialty": "Popular Specialty",
         "moreinfor": " More infor",
         "handbook": "Handbook",
-        "all-posts": "All posts"
+        "all-posts": "All posts",
+        "about-title": "What does the media say about bookingcare?",
+        "title-specialty": "Specialty",
+        "more": "Read more",
+        "title-medical-facility": "Medical facility",
+        "find-more": "Find more"
     },
     "manage-schedule": {
         "title": "Manage the doctor's examination plan",

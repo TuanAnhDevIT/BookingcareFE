@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './MedicalFacility.scss';
 import Slider from "react-slick";
+import { FormattedMessage } from 'react-intl';
+
 import benhvienhuunghivietduc from "../../../assets/images/benhvienhuunghivietduc.jpg";
 import benhvienchoray from "../../../assets/images/benhvienchoray.jpg";
 import phongkhambenhviendaihocyduoc1 from "../../../assets/images/phongkhambenhviendaihocyduoc1.jpg";
@@ -20,8 +22,12 @@ class MedicalFacility extends Component {
             <div className='section-medical-facility'>
                 <div className='section-container'>
                     <div className='section-header'>
-                        <span className='title-section'>Cơ sở y tế nổi bật</span>
-                        <button className='btn-section'>TÌM KIẾM</button>
+                        <span className='title-section'>
+                            <FormattedMessage id="homepage.title-medical-facility" />
+                        </span>
+                        <button className='btn-section'>
+                            <FormattedMessage id="homepage.find-more" />
+                        </button>
                     </div>
                     <div className='section-body'>
                         <Slider {...this.props.settings}>

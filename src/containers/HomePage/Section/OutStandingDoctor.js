@@ -4,6 +4,8 @@ import Slider from 'react-slick';
 import * as actions from '../../../store/actions';
 import { LANGUAGES } from '../../../utils';
 import { FormattedMessage } from 'react-intl';
+import './Doctor.scss';
+import { withRouter } from 'react-router';
 
 
 
@@ -52,8 +54,8 @@ class OutStandingDoctor extends Component {
                                     if (item.image) {
                                         imageBase64 = new Buffer(item.image, 'base64').toString('binary');
                                     }
-                                    let name_Vi = `${item.positionData.valueVi}, ${item.lastName} ${item.firstName} `;
-                                    let name_En = `${item.positionData.valueEn}, ${item.firstName} ${item.lastName}  `;
+                                    let nameVi = `${item.positionData.valueVi}, ${item.lastName} ${item.firstName} `;
+                                    let nameEn = `${item.positionData.valueEn}, ${item.firstName} ${item.lastName}  `;
                                     return (
                                         <div className='section-customize' key={index} >
                                             <div className='customize-border'>
@@ -63,7 +65,7 @@ class OutStandingDoctor extends Component {
                                                     />
                                                 </div>
                                                 <div className='position text-center'>
-                                                    <div>{language === LANGUAGES.VI ? name_Vi : name_En}</div>
+                                                    <div>{language === LANGUAGES.VI ? nameVi : nameEn}</div>
                                                     <div>Cơ xương khớp</div>
                                                 </div>
                                             </div>

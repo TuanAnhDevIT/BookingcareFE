@@ -122,9 +122,6 @@ class UserRedux extends Component {
 
         let { action } = this.state;
         if (action === CRUD_ACTIONS.CREATE) {
-
-
-
             this.props.createNewUser({
                 email: this.state.email,
                 password: this.state.password,
