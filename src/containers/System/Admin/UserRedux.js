@@ -208,7 +208,7 @@ class UserRedux extends Component {
         return (
             <div className='user-redux-container'>
                 <div className='title'>
-                    Learn redux DUNGNGUYEN IT chanel youtube
+                    Learn redux
                 </div>
                 <div>
                     {isGetGenders === true ? ' Loading genders ' : ''}
@@ -279,7 +279,7 @@ class UserRedux extends Component {
                                     {genders && genders.length > 0 && genders.map((item, index) => {
                                         return (
                                             <option key={index} value={item.keyMap}>
-                                                {language === LANGUAGES.VI ? item.value_Vi : item.value_En}</option>)
+                                                {language === LANGUAGES.VI ? item.valueVi : item.valueEn}</option>)
                                     })}
                                 </select>
                             </div>
@@ -293,7 +293,7 @@ class UserRedux extends Component {
                                     {positions && positions.length > 0 && positions.map((item, index) => {
                                         return (
                                             <option key={index} value={item.keyMap}>
-                                                {language === LANGUAGES.VI ? item.value_Vi : item.value_En}</option>)
+                                                {language === LANGUAGES.VI ? item.valueVi : item.valueEn}</option>)
                                     })}
                                 </select>
                             </div>
@@ -307,7 +307,7 @@ class UserRedux extends Component {
                                     {roles && roles.length > 0 && roles.map((item, index) => {
                                         return (
                                             <option key={index} value={item.keyMap}>
-                                                {language === LANGUAGES.VI ? item.value_Vi : item.value_En}</option>)
+                                                {language === LANGUAGES.VI ? item.valueVi : item.valueEn}</option>)
                                     })}
                                 </select>
                             </div>

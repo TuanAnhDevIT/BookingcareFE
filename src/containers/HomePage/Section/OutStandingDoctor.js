@@ -29,6 +29,7 @@ class OutStandingDoctor extends Component {
 
     render() {
         let arrDoctors = this.state.arrDoctor;
+        arrDoctors = arrDoctors.concat(arrDoctors).concat(arrDoctors).concat(arrDoctors).concat(arrDoctors).concat(arrDoctors).concat(arrDoctors).concat(arrDoctors).concat(arrDoctors);
         let { language } = this.props;
         return (
             <div className='section-share section-outstanding-doctor'>
@@ -51,8 +52,8 @@ class OutStandingDoctor extends Component {
                                     if (item.image) {
                                         imageBase64 = new Buffer(item.image, 'base64').toString('binary');
                                     }
-                                    let name_Vi = `${item.positionData.value_Vi}, ${item.lastName} ${item.firstName} `;
-                                    let name_En = `${item.positionData.value_En}, ${item.firstName} ${item.lastName}  `;
+                                    let name_Vi = `${item.positionData.valueVi}, ${item.lastName} ${item.firstName} `;
+                                    let name_En = `${item.positionData.valueEn}, ${item.firstName} ${item.lastName}  `;
                                     return (
                                         <div className='section-customize' key={index} >
                                             <div className='customize-border'>
