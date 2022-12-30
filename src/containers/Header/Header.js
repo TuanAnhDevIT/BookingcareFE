@@ -22,17 +22,30 @@ class Header extends Component {
     componentDidMount() {
         let { userInfo } = this.props;
         let menu = [];
+        menu = adminMenu;
+        // menu = doctorMenu;
+
+
+
         if (userInfo && !_.isEmpty(userInfo)) {
-            let role = userInfo.roleId;
+            let role = 'R2';
+            alert('1')
+
+            // let role = userInfo.roleId;
             if (role === USER_ROLE.ADMIN) {
+                alert('1')
+
                 menu = adminMenu;
+                console.log("1", menu)
             }
             if (role === USER_ROLE.DOCTOR) {
+                alert('1')
                 menu = doctorMenu;
             }
 
         }
         this.setState({
+
             menuApp: menu
         })
     }

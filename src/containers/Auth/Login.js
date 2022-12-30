@@ -6,6 +6,7 @@ import './Login.scss';
 import { FormattedMessage } from 'react-intl';
 import { handleLoginApi } from '../../services/userService';
 import { userLoginSuccess } from '../../store/actions';
+import { Redirect } from 'react-router-dom';
 
 
 class Login extends Component {
@@ -30,30 +31,35 @@ class Login extends Component {
         })
     }
     handleLogin = async () => {
-        this.setState({
-            errMessage: ''
-        })
-        try {
-            let data = await handleLoginApi(this.state.username, this.state.password);
-            if (data && data.errCode !== 0) {
-                this.setState({
-                    errMessage: data.message
-                })
-            }
-            if (data && data.errCode === 0) {
-                this.props.userLoginSuccess(data.user)
-                console.log('login succeed')
-            }
+        let linkToRedirect = '/system/user-manage';
 
-        } catch (error) {
-            if (error.response) {
-                if (error.response.data) {
-                    this.setState({
-                        errMessage: error.response.data.message
-                    })
-                }
-            }
-        }
+        return (
+            <Redirect to={linkToRedirect} />
+        );
+        // this.setState({
+        //     errMessage: ''
+        // })
+        // try {
+        //     let data = await handleLoginApi(this.state.username, this.state.password);
+        //     if (data && data.errCode !== 0) {
+        //         this.setState({
+        //             errMessage: data.message
+        //         })
+        //     }
+        //     if (data && data.errCode === 0) {
+        //         this.props.userLoginSuccess(data.user)
+        //         console.log('login succeed')
+        //     }
+
+        // } catch (error) {
+        //     if (error.response) {
+        //         if (error.response.data) {
+        //             this.setState({
+        //                 errMessage: error.response.data.message
+        //             })
+        //         }
+        //     }
+        // }
     }
     handleShowHidePassword = () => {
         this.setState({

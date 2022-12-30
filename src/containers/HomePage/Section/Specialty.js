@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
+import './Specialty.scss';
+import specialtyImg from "../../../assets/images/imgcoxuongkhop.jpg"
 
 
 import Slider from 'react-slick';
@@ -8,46 +10,52 @@ import Slider from 'react-slick';
 class Specialty extends Component {
 
   render() {
+    let settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1
+    };
     return (
-      <div className='section-share section-specialty'>
-        <div className='section-container'>
-          <div className='section-header'>
-            <span className='title-section'>
-              <FormattedMessage id="homepage.title-specialty" />
-            </span>
-            <button className='btn-section'>
-              <FormattedMessage id="homepage.more" />
-            </button>
+      <div className='section-specialty'>
+        <div className='specialty-container'>
+          <div className='specialty-header'>
+            <span className='title'>Chuyên khoa phổ biến</span>
+            <button className='xemthem'>Xem thêm</button>
           </div>
-          <div className='section-body'>
-            <Slider {...this.props.settings}>
-              <div className='section-customize'>
-                <div className='bg-img section-specialty' />
+          <div className='specialty-body'>
+            <Slider {...settings}>
 
-                <div>Cơ xương khớp </div>
+              <div className='img-customize'>
+                <img src={specialtyImg} />
+                <h3>Cơ xương khớp</h3>
               </div>
-              <div className='section-customize'>
-                <div className='bg-img section-specialty' />
-                <div>Da liễu</div>
+              <div className='img-customize'>
+                <img src={specialtyImg} />
+                <h3>Cơ xương khớp</h3>
               </div>
-              <div className='section-customize'>
-                <div className='bg-img section-specialty' />
-                <div>Dị ứng miễn dịch</div>
+              <div className='img-customize'>
+                <img src={specialtyImg} />
+                <h3>Cơ xương khớp</h3>
               </div>
-              <div className='section-customize'>
-                <div className='bg-img section-specialty' />
-                <div>Ngoại thần kinh</div>
+              <div className='img-customize'>
+                <img src={specialtyImg} />
+                <h3>Cơ xương khớp</h3>
               </div>
-              <div className='section-customize'>
-                <div className='bg-img section-specialty' />
-                <div>Nha khoa</div>
+              <div className='img-customize'>
+                <img src={specialtyImg} />
+                <h3>Cơ xương khớp</h3>
               </div>
-              <div className='section-customize'>
-                <div className='bg-img section-specialty' />
-                <div>Nội khoa</div>
+              <div className='img-customize'>
+                <img src={specialtyImg} />
+                <h3>Cơ xương khớp</h3>
+              </div>
+              <div className='img-customize'>
+                <img src={specialtyImg} />
+                <h3>Cơ xương khớp</h3>
               </div>
             </Slider>
-
           </div>
         </div>
       </div>
