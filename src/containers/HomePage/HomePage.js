@@ -14,9 +14,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 class HomePage extends Component {
-    // handleAfterChange = (index, dontAnimate) => {
-    //     console.log('DUNGNGUYEN IT :', index)
-    // }
     render() {
 
         let settings = {
@@ -26,9 +23,6 @@ class HomePage extends Component {
             speed: 500,
             slidesToShow: 4,
             slidesToScroll: 4,
-            // slickGoTo: this.handleAfterChange
-            // nextArrow: <SampleNextArrow/>,
-            // prevArrow: <SamplePrevArrow/>
         };
         return (
             <div>
